@@ -1,5 +1,10 @@
-<button class="btn btn-success mb-4 d-inline-block">
-  New Recipe</button>
-<div class="row justify-content-around">
-  <app-recipe-item *ngFor="let recipe of recipes" [recipe]="recipe"></app-recipe-item>
-</div>
+<div class="text-center text-xl-left">
+  <button class="btn btn-success mb-4 d-inline-block">
+    New Recipe</button>
+  <div class="row justify-content-around">
+    <app-recipe-item 
+    *ngFor="let recipe of recipes" 
+    [recipe]="recipe"
+    (recipeClicked)="onRecipeClicked(recipe)"></app-recipe-item>
+  </div>
+</div> 
