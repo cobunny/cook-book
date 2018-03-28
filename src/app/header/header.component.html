@@ -9,9 +9,9 @@
         <li class="nav-item">
           <a class="nav-link text-white" href="#" (click)="onSelect('shopping-list')">Shopping List</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link dropdown-toggle text-white" href="#">Manage</a>
-          <ul class="dropdown-menu">
+        <li class="nav-item dropdown" ngbDropdown>
+          <a class="nav-link dropdown-toggle text-white" id="dropdown" role="button" href="#" ngbDropdownToggle>Manage</a>
+          <ul class="dropdown-menu"   aria-labelledby="dropdown" ngbDropdownMenu>
             <li class="dropdown-item">
               <a href="#">Save data</a>
             </li>

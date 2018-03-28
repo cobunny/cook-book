@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CustomFormsModule } from 'ng2-validation';
 
-
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RecipesComponent } from './recipes/recipes.component';
@@ -25,13 +24,8 @@ import { HeaderComponent } from './header/header.component';
     RecipeItemComponent,
     HeaderComponent
   ],
-  imports: [
-    BrowserModule,
-    NgbModule.forRoot(),
-    FormsModule,
-    CustomFormsModule
-  ],
+  imports: [BrowserModule, NgbModule.forRoot(), FormsModule, CustomFormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
