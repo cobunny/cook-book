@@ -4,7 +4,6 @@
   <div class="row justify-content-around">
     <app-recipe-item 
     *ngFor="let recipe of recipes" 
-    [recipe]="recipe"
-    (recipeClicked)="onRecipeClicked(recipe)"></app-recipe-item>
+    [recipe]="recipe"></app-recipe-item>
   </div>
 </div> 
