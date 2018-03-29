@@ -1,12 +1,26 @@
-<h1 class="text-center mb-3">{{recipe.name}}</h1>
 <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-thumbnail mb-3">
+<h1 class="text-center mb-3">{{recipe.name}}</h1>
 <div class="mb-3">
-  <h3 class="text-center">{{recipe.description}}</h3>
-  <p></p>
+  <p>{{recipe.description}}</p>
 </div>
 <div>
-  <h3 class="text-center">Ingredient</h3>
-  <p></p>
+  <div class="d-flex justify-content-between align-items-center">
+    <h3 class="p-2">Ingredient:</h3>
+    <div class="dropdown p-2" ngbDropdown>
+      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" ngbDropdownToggle>
+        Manage Recipe
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" ngbDropdownMenu>
+        <a class="dropdown-item" href="#">Add to Shopping List</a>
+        <a class="dropdown-item" href="#">Edit Recipe</a>
+        <a class="dropdown-item" href="#">Delete Recipe</a>
+      </div>
+    </div>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let ingredient of recipe.ingredients">
+      {{ ingredient.name}}
+      <span class="badge badge-primary badge-pill">{{ingredient.amount}}</span>
+    </li>
+  </ul>
 </div>
-
-
