@@ -3,17 +3,17 @@
     <a class="navbar-brand text-white" href="#">Recipe Book</a>
     <div class="collapse navbar-collapse justify-content-center">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#" (click)="onSelect('recipe')">Recipes</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link text-white" routerLink="/recipes">Recipes</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#" (click)="onSelect('shopping-list')">Shopping List</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link text-white" routerLink="/shopping-list">Shopping List</a>
         </li>
         <li class="nav-item dropdown" ngbDropdown>
-          <a class="nav-link dropdown-toggle text-white" id="dropdown" role="button" href="#" ngbDropdownToggle>Manage</a>
+          <a class="nav-link dropdown-toggle text-white" id="dropdown" role="button" ngbDropdownToggle>Manage</a>
           <div class="dropdown-menu" aria-labelledby="dropdown" ngbDropdownMenu>
-            <a class="dropdown-item" href="#">Save data</a>
-            <a class="dropdown-item" href="#">Fetch data</a>
+            <a class="dropdown-item">Save data</a>
+            <a class="dropdown-item">Fetch data</a>
           </div>
         </li>
       </ul>

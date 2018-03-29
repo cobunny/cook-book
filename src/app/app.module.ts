@@ -13,6 +13,8 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { HeaderComponent } from './header/header.component';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { AppRoutingModule } from './app-routing.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,16 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     RecipeDetailComponent,
     RecipeListComponent,
     RecipeItemComponent,
-    HeaderComponent
+    HeaderComponent,
+    NotFoundComponent
   ],
-  imports: [BrowserModule, NgbModule.forRoot(), FormsModule, CustomFormsModule],
+  imports: [
+    BrowserModule,
+    NgbModule.forRoot(),
+    FormsModule,
+    CustomFormsModule,
+    AppRoutingModule
+  ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
