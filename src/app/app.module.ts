@@ -15,6 +15,7 @@ import { HeaderComponent } from './header/header.component';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { AppRoutingModule } from './app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     RecipeListComponent,
     RecipeItemComponent,
     HeaderComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    RecipeStartComponent
   ],
   imports: [
     BrowserModule,

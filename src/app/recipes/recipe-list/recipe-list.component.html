@@ -3,7 +3,9 @@
     New Recipe</button>
   <div class="row justify-content-around">
     <app-recipe-item 
-    *ngFor="let recipe of recipes" 
-    [recipe]="recipe"></app-recipe-item>
+    *ngFor="let recipe of recipes; let i=index" 
+    [recipe]="recipe"
+    [index]="i">
+  </app-recipe-item>
   </div>
-</div> 
+</div>
