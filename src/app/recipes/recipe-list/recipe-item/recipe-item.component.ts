@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Recipe } from '../../recipe.model';
+import { interval } from 'rxjs/observable/interval';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-recipe-item',
