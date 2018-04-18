@@ -16,10 +16,10 @@
   </div>
   <div formArrayName="ingredients">
     <div class="row mb-4" *ngFor="let ingCtrl of recipeForm.get('ingredients').controls; let i=index" [formGroupName]="i">
-      <div class="col-sm-8">
+      <div class="col-sm-7">
         <input formControlName="name" type="text" class="form-control">
       </div>
-      <div class="col-sm-2">
+      <div class="col-sm-3">
         <input formControlName="amount" type="number" class="form-control">
       </div>
       <div class="col-sm-2">
