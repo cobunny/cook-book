@@ -23,9 +23,14 @@
         <input formControlName="amount" type="number" class="form-control">
       </div>
       <div class="col-sm-2">
-        <button type="text" class="btn btn-danger">X</button>
+        <button type="button" class="btn btn-danger">X</button>
       </div>
     </div>
+  </div>
+  <div class="mb-4">
+    <button type="button" class="btn btn-success" (click)="onAddIngredient()">
+      Add ingredient
+    </button>
   </div>
   <button type="" class="btn btn-success">Save</button>
   <button type="button" class="btn btn-danger">Cancel</button>
