@@ -36,6 +36,10 @@ export class RecipeEditComponent implements OnInit {
     this.onCancel();
   }
 
+  get ingredients() {
+    return this.recipeForm.get('ingredients') as FormArray;
+  }
+
   onAddIngredient() {
     this.ingredients.push(
       new FormGroup({
@@ -48,12 +52,12 @@ export class RecipeEditComponent implements OnInit {
     );
   }
 
-  get ingredients() {
-    return this.recipeForm.get('ingredients') as FormArray;
-  }
-
   onCancel() {
     this.router.navigate(['../'], { relativeTo: this.route });
+  }
+
+  onDeleteIngredient(index: number) {
+    this.ingredients.removeAt(index);
   }
 
   private initForm() {
