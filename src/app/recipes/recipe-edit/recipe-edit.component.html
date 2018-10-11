@@ -15,7 +15,7 @@
     <textarea formControlName="description" type="text" id="description" class="form-control"></textarea>
   </div>
   <div formArrayName="ingredients">
-    <div class="row mb-4" *ngFor="let ingCtrl of recipeForm.get('ingredients').controls; let i=index" [formGroupName]="i">
+    <div class="row mb-4" *ngFor="let ingCtrl of recipeForm.get('ingredients').value; let i=index" [formGroupName]="i">
       <div class="col-sm-7">
         <input formControlName="name" type="text" class="form-control">
       </div>
