@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng serve",
     "start": "node server.js",
-    "build": "ng build --prod",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -31,6 +31,7 @@
     "ng2-validation": "^4.2.0",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.3.3",
+    "ssl-express-www": "^3.0.3",
     "typescript": "^2.9.2",
     "zone.js": "^0.8.19"
   },
